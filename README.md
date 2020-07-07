@@ -57,11 +57,22 @@ HTML을 반환받는 API Server를 만들어볼 예정입니다.
 ```
 
 ### Sample Response
-
+ 
+ - Success
+ 
 ```json
 {
     "result": "success",
     "response": "<div id=\"fb-root\"></div>\n<script async=\"1\" defer=\"1\" crossorigin=\"anonymous\" src=\"https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&amp;version=v7.0\" nonce=\"H1Jocr3v\"></script><div class=\"fb-post\" data-href=\"https://www.facebook.com/20531316728/posts/10154009990506729/\" data-width=\"552\"><blockquote cite=\"https://www.facebook.com/20531316728/posts/10154009990506729/\" class=\"fb-xfbml-parse-ignore\">게시: <a href=\"https://www.facebook.com/facebookapp/\">Facebook App</a>&nbsp;<a href=\"https://www.facebook.com/20531316728/posts/10154009990506729/\">2015년 8월 27일 목요일</a></blockquote></div>"
+}
+```
+
+ - Fail
+ 
+```json
+{
+    "result": "Fail",
+    "response": "지원하지 않는 형식의 Facebook URL 입니다."
 }
 ```
 
