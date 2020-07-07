@@ -33,29 +33,17 @@ HTML을 반환받는 API Server를 만들어볼 예정입니다.
     - Auto Configuration을 지원합니다
     - Spring MVC, REST 및 내장 Tomcat을 지원합니다.
 
-
-2. [Jackson data-bind](https://github.com/FasterXML/jackson)
-	- Jackson은 Java Object를 JSON으로 변환하거나 
-      JSON을 Java Object로 변환하는데 사용하는 Java 라이브러리 입니다.
-
 <br/>
 
 해당 모듈의 의존성을 추가해줍니다.
  - build.gradle
 ```gradle
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    compile group: 'com.fasterxml.jackson.core', 
-             name: 'jackson-databind', version: '2.8.8'version: '2.10.0'
 ```
  - pom.xml
 ```
    <dependency>
        <groupId>org.springframework.boot</groupId>
        <artifactId>spring-boot-starter-web</artifactId>
-   </dependency>
-   <dependency>
-       <groupId>com.fasterxml.jackson.core</groupId>
-       <artifactId>jackson-databind</artifactId>
-       <version>2.8.8</version>
    </dependency>
 ```
