@@ -17,7 +17,7 @@ public class EmbedController {
     @GetMapping("/api/socialembed")
     public HttpEntity<Map<String, Object>> socialEmbed(
                                         @RequestParam(value = "url") String url) {
-        return embedService.embedProcess(url);
+        return embedService.callEmbedProcess(url);
     }
 
 }
