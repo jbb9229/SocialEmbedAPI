@@ -47,3 +47,39 @@ HTML을 반환받는 API Server를 만들어볼 예정입니다.
        <artifactId>spring-boot-starter-web</artifactId>
    </dependency>
 ```
+
+## Request & Response
+
+### Sample Request
+
+```http request
+    http://localhost:{port-number}/api/socialembed?url={social-url}
+```
+
+### Sample Response
+
+```json
+{
+    "result": "success",
+    "response": "<div id=\"fb-root\"></div>\n<script async=\"1\" defer=\"1\" crossorigin=\"anonymous\" src=\"https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&amp;version=v7.0\" nonce=\"H1Jocr3v\"></script><div class=\"fb-post\" data-href=\"https://www.facebook.com/20531316728/posts/10154009990506729/\" data-width=\"552\"><blockquote cite=\"https://www.facebook.com/20531316728/posts/10154009990506729/\" class=\"fb-xfbml-parse-ignore\">게시: <a href=\"https://www.facebook.com/facebookapp/\">Facebook App</a>&nbsp;<a href=\"https://www.facebook.com/20531316728/posts/10154009990506729/\">2015년 8월 27일 목요일</a></blockquote></div>"
+}
+```
+
+### Embed 처리가 가능한 소셜 별 URL
+
+1. Facebook
+ - https://www.facebook.com/{page-name}/posts/{post-id}
+ - https://www.facebook.com/{username}/posts/{post-id}
+ - https://www.facebook.com/{page-name}/photos/{photo-id}/
+ - https://www.facebook.com/{username}/photos/{photo-id}/
+ - https://www.facebook.com/{page-name}/videos/{video-id}/
+ - https://www.facebook.com/{username}/videos/{video-id}/
+ 
+2. Instagram
+ - https://www.instagram.com/p/{post-id}/
+ 
+3. Twitter
+ - https://twitter.com/{username}/status/{post-id}
+ 
+4. TikTok
+ - https://www.tiktok.com/{username}/video/{post-id}
