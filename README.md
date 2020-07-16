@@ -1,5 +1,5 @@
 
-# SNS Embed?
+# SNS Embed? [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 >최근 기사나 블로그들을 보면 SNS의 게시글을 SNS에서 보는 것처럼 
 그대로 가져온 것을 보신적 있으신가요?
